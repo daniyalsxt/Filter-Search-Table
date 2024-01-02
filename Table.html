@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment</title>
+  <link rel="stylesheet" href="tableStyling.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="pageOne">
+
+  
+  <table>
+
+    <thead>
+      <tr id="Header">    
+        <th class="text" colspan="3">
+          Multi Filter
+        </th>
+        <th colspan="2" class="Search">
+          <label for="search">
+          <input id="search" type="text" onkeyup="search()" placeholder="Search">
+            <i class="ri-search-2-line"></i>
+          </label>
+        </th>
+    
+      </tr>
+
+
+      <tr>
+        <th>Student Name</th>
+
+        <th>Father Name</th>
+
+        <th>
+            <select class="dropdown" id="Gender"  onchange="forGenders(this.value)">
+            <option value="all">Genders &nbsp;&nbsp;</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </th>
+
+        <th>Student Id</th>
+
+        <th>
+          <select class="dropdown" id="Field" onchange="forFields(this.value)">
+          <option value="all">Fields</option>
+          <option value="Engineer">Engineer</option>
+          <option value="Biology">Biology</option>
+          <option value="Computer">Computer&nbsp;&nbsp;</option>
+          <option value="Art">Arts</option></select>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      
+    </tbody>
+  </table>
+</div>
+<script src="Data.js"></script>
+<script src="filterData.js"></script>
+<script src="onSearching.js"></script>
+</body>
+</html>

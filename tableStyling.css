@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Assistant', sans-serif;
+  font-weight: 500;
+  color: white;}
+
+::selection{
+background-color: transparent;}
+
+#search::selection{
+  background-color: rgba(180, 180, 180, 0.12);
+  color: rgb(173, 173, 173);}
+
+html,body{
+  height: 100%;
+  width: 100%;}
+
+#pageOne{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(71, 71, 71);}
+
+  
+#Header>.text{
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  pointer-events: none;
+}
+
+.Search>label{
+  position: relative;
+}
+.Search>label>input{
+  width: 90%;
+  height: 30px;
+  background-color: rgb(50, 50, 50);
+  outline: none;
+  border: none;
+  padding: 0 28px 0 10px;
+}
+.Search>label>i{
+  position: absolute;
+  top: 3px;
+  color: rgb(247, 243, 243);
+  right: 6px;
+  cursor: pointer;
+}
+
+table{
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center; 
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.46);}
+tr>th{
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.334);
+  background-color: rgb(46, 46, 46);
+  padding: 12px 28px;}
+tr>th:nth-last-child(1){
+  border: none;}
+thead>tr>th>.dropdown{
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0 28px;
+  cursor: pointer;}
+thead>tr>th>.dropdown>option{
+  background-color: rgb(37, 37, 37);
+  color: rgb(255, 255, 255);}
+  
+tbody>tr>td{
+  background-color: rgb(27, 27, 27);
+  padding: 12px 28px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.227);
+pointer-events: none;}
+
